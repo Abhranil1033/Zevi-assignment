@@ -1,0 +1,15 @@
+.belowSearch{
+    display: flex;
+    flex-direction: row;
+}
+.productsContainer{
+    padding-top: 5vh; 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.productSearchBar{
+    width: 60%;
+}

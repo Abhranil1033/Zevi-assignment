@@ -1,0 +1,48 @@
+.allTrendyImages {
+  display: flex;
+  gap: 20px; /* Adjust the distance between images */
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+  flex-wrap: wrap;
+}
+
+.trendyImage {
+  border-radius: 5px;
+  height: 20rem;
+  width: 15rem;
+}
+
+.trendyImageName {
+  font-weight: normal;
+  font-size: small;
+}
+
+@media screen and (max-width : 550px) {
+  .allTrendyImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trendyImage{
+    height: 25rem;
+    width: 20rem;
+  }
+}
+
+
+@media screen and (max-width : 350px) {
+  .allTrendyImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trendyImage{
+    height: 15rem;
+    width: 10rem;
+  }
+}

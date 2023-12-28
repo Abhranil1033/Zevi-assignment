@@ -1,0 +1,36 @@
+.searchContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.searchWrapper {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 0px 10px 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.textArea {
+    border: none;
+    width: 93%;
+    font-size: larger;
+    outline: none;
+}
+
+.searchIcon {
+    color: grey;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.searchIcon:hover {
+    transform: scale(0.7);
+    transition: 0.6s;
+}

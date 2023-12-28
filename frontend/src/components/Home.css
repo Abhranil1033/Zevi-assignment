@@ -1,0 +1,100 @@
+.homeGen {
+  background-image: url(https://c0.wallpaperflare.com/preview/18/875/686/sale-clothes-shopping-retail-thumbnail.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.homeSearchBar{
+  width: 60%;
+  margin-top: 10vh;
+}
+
+.homeContainerWithTrends {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeContainerWithoutTrends {
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+ height: 40px;  
+ width: 70px; 
+ position: absolute;
+ right: 20px;
+ top : 40px;
+ z-index: 100000000;
+}
+
+
+/* trends and suggestions */
+.trendsContainer {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 70%;
+  height: 70%;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0 20px 40px;
+}
+
+.trendsContainerHidden {
+  display: none;
+}
+
+.searchHeader {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.suggestions {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .homeSearch {
+    width: 90%;
+  }
+
+  .trendsContainer {
+    width: 90%;
+  }
+}
+
+/* For even smaller screens or mobile devices */
+@media screen and (max-width: 480px) {
+  .homeSearch {
+    width: 95%;
+  }
+
+  .trendsContainer {
+    width: 95%;
+    padding: 20px 0 0 20px;
+  }
+
+  .trendImages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .trendImage {
+    width: 50%;
+    /* Set the width for each trend image to take half of the container */
+    padding: 5px;
+    /* Add some space between images */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+  }
+}
